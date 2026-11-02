@@ -1,0 +1,650 @@
+/* Base Styles */
+:root {
+    --primary-color: #A7C7E7;  /* Light blue */
+    --secondary-color: #ADD8E5;  /* Lighter blue */
+    --accent-color: #C4EBF1;   /* Light teal */
+    --light-color: #FFFFC2;    /* Pale yellow */
+    --dark-color: #3A4A5A;     /* Darker blue-gray for better contrast */
+    --text-color: #2D3748;     /* Darker gray for better readability */
+    --text-muted: #4A5568;     /* Less muted gray */
+    --card-bg: #FFFFFF;        /* White for cards */
+    --card-shadow: rgba(167, 199, 231, 0.15);  /* Light blue shadow */
+    --accent-yellow: #FFD301;  /* Vibrant yellow */
+    --light-yellow: #FFF684;   /* Light yellow */
+}
+
+/* Modal Font Styling */
+#loginModal .modal-content,
+#registerModal .modal-content {
+    font-family: 'Poppins', sans-serif;
+}
+
+#loginModal .modal-title,
+#registerModal .modal-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+    color: #1a202c;
+}
+
+#loginModal .form-label,
+#registerModal .form-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+#loginModal .form-control,
+#registerModal .form-control {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+#loginModal .form-control:focus,
+#registerModal .form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.15);
+}
+
+#loginModal .form-check-label,
+#registerModal .form-check-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+#loginModal a,
+#registerModal a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #3182ce;
+    transition: color 0.2s ease;
+}
+
+#loginModal a:hover,
+#registerModal a:hover {
+    color: #2c5282;
+}
+
+#loginModal .btn,
+#registerModal .btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#loginModal .btn-warning,
+#registerModal .btn-warning {
+    background: linear-gradient(135deg, #ffc107, #ffd54f);
+    border: none;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+    color: #1a202c;
+}
+
+#loginModal .btn-warning:hover,
+#registerModal .btn-warning:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 193, 7, 0.4);
+    background: linear-gradient(135deg, #ffd54f, #ffc107);
+}
+
+#loginModal .btn-success,
+#registerModal .btn-success {
+    background: linear-gradient(135deg, #ffc107, #ffd54f);
+    border: none;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+    color: #1a202c;
+}
+
+#loginModal .btn-success:hover,
+#registerModal .btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 193, 7, 0.4);
+    background: linear-gradient(135deg, #ffd54f, #ffc107);
+}
+
+#loginModal p,
+#registerModal p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+#loginModal small,
+#registerModal small {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: var(--dark-color) !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-yellow) !important;
+    text-shadow: 0 0 1px var(--dark-color);
+}
+
+.navbar-brand {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    padding: 0.5rem 1rem !important;
+    letter-spacing: 0;
+}
+
+.nav-link {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: linear-gradient(135deg, rgba(167, 199, 231, 0.7), rgba(173, 216, 229, 0.7)), 
+                url('https://images.unsplash.com/photo-1504674900247-087703934569?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    height: 70vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-banner h1 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #0A1128;  /* Dark navy blue */
+    font-weight: 700;
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+}
+
+.hero-banner .lead {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #16213E;  /* Slightly lighter navy blue */
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    letter-spacing: 0;
+    line-height: 1.6;
+}
+
+.h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-color);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2.2rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-yellow), var(--light-yellow));
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Search Section */
+.search-section {
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(167, 199, 231, 0.5);
+}
+
+.search-section .form-control {
+    border-radius: 50px;
+    padding: 0.75rem 1.8rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 15px rgba(137, 207, 240, 0.2);
+    transition: all 0.3s ease;
+}
+
+.search-section .form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 20px rgba(137, 207, 240, 0.3);
+}
+
+.search-section .btn {
+    border-radius: 50px;
+    padding: 0.75rem 2.2rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+}
+
+.search-section .btn:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Cards */
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 15px rgba(167, 199, 231, 0.2);
+    border-top: 3px solid var(--accent-yellow);
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.card-title {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    color: #1a202c;
+    letter-spacing: -0.01em;
+}
+
+.card-text {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #4a5568;
+    letter-spacing: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(167, 199, 231, 0.3);
+    border-color: var(--accent-color);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Categories */
+.category-card .card {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFFBF0 !important; /* Light yellow background */
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.category-card .card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.category-card .card-title {
+    color: var(--text-color);
+    font-weight: 700;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    padding: 1rem 0.5rem;
+}
+
+/* Buttons */
+.btn {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    padding: 0.6rem 1.8rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0;
+    font-size: 1rem;
+}
+
+.btn-success {
+    background-color: var(--accent-yellow);
+    color: var(--dark-color);
+    border-color: var(--accent-yellow);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success:hover, .btn-success:focus {
+    background-color: var(--light-yellow);
+    border-color: var(--light-yellow);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 211, 1, 0.5);
+    color: var(--dark-color);
+}
+
+.btn-outline-light {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid white;
+    color: rgb(2, 53, 95);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--primary-color);;
+    color: rgb(2, 53, 95);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
+    text-shadow: none;
+}
+
+/* Sections */
+section {
+    padding: 5rem 0;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+section:nth-child(even) {
+    background-color: var(--light-color);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    display: inline-block;
+    margin: 0 auto 1rem;
+}
+
+.section-title p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--dark-color), #6D7B8D);
+    color: white;
+    border-top: 3px solid var(--accent-yellow);
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-yellow), var(--primary-color));
+}
+
+footer h5 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+footer h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-yellow), var(--light-yellow));
+    border-radius: 3px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+    padding-left: 0;
+}
+
+/* Cookie Consent Banner */
+.cookie-consent-banner {
+    z-index: 9999;
+    background-color: #FFFFC2;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .hero-banner {
+        text-align: center;
+        height: 60vh;
+        min-height: 400px;
+    }
+    
+    .hero-banner .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .search-section {
+        margin-top: 0;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Utility Classes */
+.rounded-lg {
+    border-radius: 15px;
+}
+
+.shadow-sm {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Badges */
+.badge {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    padding: 0.35em 0.65em;
+    border-radius: 6px;
+    line-height: 1.4;
+}
+
+/* Form Elements */
+.form-control,
+.form-select,
+.form-label {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 0.9375rem;
+    color: #2d3748;
+    letter-spacing: 0;
+}
+
+.form-control {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    letter-spacing: 0;
+}
+
+/* Small Text */
+small,
+.text-muted {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+}
+
+/* Paragraphs */
+p {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0;
+}
+
+/* Links */
+a {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+/* Footer */
+footer,
+footer * {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+footer h5 {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+footer a {
+    font-weight: 400;
+    letter-spacing: 0;
+}
