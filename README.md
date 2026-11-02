@@ -30,6 +30,35 @@ Through this project, I gained practical experience in full-stack web developmen
 - User profile management
 - Contact form and newsletter subscription
 
+## 📸 Project Screenshots
+
+### Homepage
+![FoodFusion Homepage](screenshots/homepage.jpg)
+
+### Recipes
+![Recipes Page](screenshots/recipes.jpg)
+
+### Recipe Details
+![Recipe Details](screenshots/details.jpg)
+
+### Cookbook
+![Cookbook](screenshots/cookbook.jpg)
+
+### Search
+![Search](screenshots/search.png)
+
+### Culinary Resources
+![Culinary Resources](screenshots/culinary-resources.jpg)
+
+### Educational Resources
+![Educational Resources](screenshots/educational-resources.jpg)
+
+### About Us
+![About Us](screenshots/aboutus.jpg)
+
+### Contact Us
+![Contact Us](screenshots/contactus.jpg)
+
 ## 🚀 How to Run
 
 1. Install a local PHP and MySQL environment, such as XAMPP or MAMP.
